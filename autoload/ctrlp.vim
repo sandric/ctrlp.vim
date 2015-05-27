@@ -311,6 +311,7 @@ fu! s:Close()
 	cal s:execextvar('exit')
 	cal s:log(0)
 	let v:errmsg = s:ermsg
+	startinsert
 	ec
 endf
 " * Clear caches {{{1
